@@ -1,4 +1,4 @@
-= Java kata bootstrap
+# Java kata bootstrap
 
 This is a simple java kata template.
 
