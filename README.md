@@ -7,6 +7,6 @@ Prerequisite:
 
 The following test frameworks are available:
 - JUnit 5
-- AssertJ for fluent assertions
-- JQwik for property based testing
-- ApprovalTests.Java for approval testing
+- [AssertJ](https://assertj.github.io/doc/) for fluent and natural assertions
+- [JQwik](https://jqwik.net/) for property based testing
+- [ApprovalTests.Java](https://github.com/approvals/ApprovalTests.Java) for approval testing
