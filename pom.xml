@@ -17,6 +17,7 @@
         <junit.version>5.8.2</junit.version>
         <assertj.version>3.22.0</assertj.version>
         <jqwik.version>1.8.1</jqwik.version>
+        <approvaltests.version>22.2.0</approvaltests.version>
     </properties>
 
     <dependencyManagement>
@@ -53,6 +54,11 @@
             <artifactId>jqwik</artifactId>
             <version>${jqwik.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.approvaltests</groupId>
+            <artifactId>approvaltests</artifactId>
+            <version>${approvaltests.version}</version>
         </dependency>
     </dependencies>
 </project>
