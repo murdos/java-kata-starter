@@ -3,7 +3,7 @@
 This is a simple java kata template.
 
 Prerequisite:
-- java 17
+- java 21
 
 The following test frameworks are available:
 - JUnit 5
