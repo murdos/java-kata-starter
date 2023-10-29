@@ -1,0 +1,40 @@
+name: build
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Setup: checkout project'
+        uses: actions/checkout@v4
+      - name: 'Setup: Java'
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: 21
+      - name: 'Test: run backend tests'
+        run: mvn clean verify
+  dependabot-auto-merge:
+    name: dependabot-auto-merge
+    needs: [build]
+    permissions:
+      pull-requests: write
+      contents: write
+    runs-on: ubuntu-latest
+    if: ${{ github.repository == 'murdos/java-kata-starter' && github.ref != 'refs/heads/main' && github.event.pull_request.user.login == 'dependabot[bot]' }}
+    steps:
+      - name: Dependabot metadata
+        id: dependabot-metadata
+        uses: dependabot/fetch-metadata@v1.6.0
+      - name: Enable auto-merge for Dependabot PRs
+        if: ${{ steps.dependabot-metadata.outputs.update-type != 'version-update:semver-major' }}
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
