@@ -7,4 +7,5 @@ Prerequisite:
 
 The following test frameworks are available:
 - JUnit 5
-- AssertJ
+- AssertJ for fluent assertions
+- JQwik for property based testing
