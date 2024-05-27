@@ -16,7 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.10.2</junit.version>
         <assertj.version>3.25.3</assertj.version>
-        <jqwik.version>1.8.4</jqwik.version>
+        <jqwik.version>1.8.5</jqwik.version>
         <approvaltests.version>24.2.0</approvaltests.version>
     </properties>
 
