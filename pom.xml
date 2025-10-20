@@ -17,7 +17,7 @@
         <junit.version>6.0.0</junit.version>
         <assertj.version>3.27.6</assertj.version>
         <jqwik.version>1.9.3</jqwik.version>
-        <approvaltests.version>25.6.0</approvaltests.version>
+        <approvaltests.version>25.7.0</approvaltests.version>
     </properties>
 
     <dependencyManagement>
