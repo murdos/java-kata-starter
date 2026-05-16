@@ -18,6 +18,14 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 21
+      - name: 'Setup: Node'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+      - name: 'Setup: install npm dependencies'
+        run: npm ci
+      - name: 'Check: formatting'
+        run: npm run prettier:check
       - name: 'Test: run backend tests'
         run: mvn clean verify
   dependabot-auto-merge:
