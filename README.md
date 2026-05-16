@@ -10,6 +10,7 @@ Prerequisites:
 
 - JUnit 6
 - [AssertJ](https://assertj.github.io/doc/) for fluent and natural assertions
+- [Cucumber](https://cucumber.io/) for Behaviour-Driven Development (BDD)
 - [JQwik](https://jqwik.net/) for Property Based Testing
 - [ApprovalTests.Java](https://github.com/approvals/ApprovalTests.Java) for approval testing
 
@@ -34,5 +35,5 @@ npm run prettier:format
 
 1. Open **Settings** > **Languages & Frameworks** > **JavaScript** > **Prettier**
 2. Choose the **Automatic Prettier configuration** option
-3. Set **Run for files** to `**/*.{java,xml,json,md}`
+3. Set **Run for files** to `**/*.{java,xml,json,md,feature}`
 4. Check **Run on save**
