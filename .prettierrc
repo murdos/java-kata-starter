@@ -2,6 +2,9 @@
 printWidth: 100
 singleQuote: true
 tabWidth: 2
+useTabs: false
+endOfLine: 'lf'
+experimentalOperatorPosition: start
 
 plugins:
   - '@prettier/plugin-xml'
