@@ -27,7 +27,7 @@ jobs:
       - name: 'Check: formatting'
         run: npm run prettier:check
       - name: 'Test: run backend tests'
-        run: mvn clean verify
+        run: mvn clean verify --batch-mode --no-transfer-progress
   dependabot-auto-merge:
     name: dependabot-auto-merge
     needs: [build]
