@@ -1,0 +1,12 @@
+# Prettier configuration
+printWidth: 100
+singleQuote: true
+tabWidth: 2
+
+plugins:
+  - '@prettier/plugin-xml'
+  - prettier-plugin-java
+  - prettier-plugin-packagejson
+
+# xml rules:
+xmlWhitespaceSensitivity: ignore
