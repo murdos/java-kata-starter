@@ -20,7 +20,7 @@
     <assertj.version>3.27.7</assertj.version>
     <jqwik.version>1.10.1</jqwik.version>
     <approvaltests.version>31.0.0</approvaltests.version>
-    <cucumber.version>7.34.3</cucumber.version>
+    <cucumber.version>7.34.4</cucumber.version>
   </properties>
 
   <dependencyManagement>
