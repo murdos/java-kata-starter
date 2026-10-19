@@ -18,7 +18,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>6.1.3</junit.version>
     <assertj.version>3.27.7</assertj.version>
-    <jqwik.version>1.10.1</jqwik.version>
+    <jqwik.version>1.10.2</jqwik.version>
     <approvaltests.version>31.0.0</approvaltests.version>
     <cucumber.version>8.0.4</cucumber.version>
   </properties>
